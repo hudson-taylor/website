@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="263.62551"
+     inkscape:cy="572.77854"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1678"
+     inkscape:window-height="1000"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3044"
+       transform="translate(65.714286,278.57143)"
+       inkscape:export-filename="/home/pomke/code/hudson-taylor.github.io/img/logo.png"
+       inkscape:export-xdpi="99.269997"
+       inkscape:export-ydpi="99.269997">
+      <text
+         sodipodi:linespacing="125%"
+         id="text2985"
+         y="328.98138"
+         x="183.61833"
+         style="font-size:75.97751617px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="328.98138"
+           x="183.61833"
+           id="tspan2987"
+           sodipodi:role="line">戴德生</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2989"
+         y="262.60999"
+         x="174.28123"
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#aa0000;fill-opacity:1;stroke:none;font-family:Arial Black;-inkscape-font-specification:'Arial Black,'"
+         xml:space="preserve"><tspan
+           y="262.60999"
+           x="174.28123"
+           id="tspan2991"
+           sodipodi:role="line">HT</tspan></text>
+      <g
+         transform="translate(41.501846,-283.56422)"
+         id="g3018">
+        <text
+           xml:space="preserve"
+           style="font-size:272.02493286px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="300.46616"
+           y="611.58734"
+           id="text2993"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2995"
+             x="300.46616"
+             y="611.58734">]</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:272.02493286px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="-193.99197"
+           y="611.58734"
+           id="text2993-7"
+           sodipodi:linespacing="125%"
+           transform="scale(-1,1)"><tspan
+             sodipodi:role="line"
+             id="tspan2995-4"
+             x="-193.99197"
+             y="611.58734">]</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
