@@ -18,8 +18,8 @@
 }
 
 .btn-featured {
-  background: $ht-yellow;
-  border-color: $ht-yellow;
+  background: $ht-main-colour;
+  border-color: $ht-main-colour;
   color: $ht-dark-gray;
   font-weight: bold;
   font-family: $headings-font-family;
@@ -32,7 +32,7 @@
 
   &:hover {
     background: $ht-dark-gray;
-    color: $ht-yellow;
+    color: $ht-main-colour;
     border-color: $ht-dark-gray;
   }
 

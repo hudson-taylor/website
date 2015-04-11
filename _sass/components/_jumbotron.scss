@@ -71,7 +71,7 @@
 }
 
 .jumbotron-inverse {
-  background: $ht-yellow;
+  background: $ht-main-colour;
   color: $ht-dark-gray;
 
   &::before {
@@ -83,6 +83,6 @@
   }
 
   .jumbotron-brand {
-    color: darken($ht-yellow, 10%);
+    color: darken($ht-main-colour, 10%);
   }
 }

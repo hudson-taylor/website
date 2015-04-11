@@ -1,6 +1,6 @@
 // Core variables and mixins
 $ht-dark-gray:             #323330;
-$ht-yellow:                #429EFF;
+$ht-main-colour:           #429EFF;
 
 //
 // Variables
@@ -359,14 +359,14 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 $navbar-collapse-max-height:       340px;
 
 $navbar-default-color:             $ht-dark-gray;
-$navbar-default-bg:                $ht-yellow;
+$navbar-default-bg:                $ht-main-colour;
 $navbar-default-border:            $ht-dark-gray;
 
 // Navbar links
 $navbar-default-link-color:                $navbar-default-color;
 $navbar-default-link-hover-color:          darken($navbar-default-color, 6.5%);
 $navbar-default-link-hover-bg:             transparent;
-$navbar-default-link-active-color:         $ht-yellow;
+$navbar-default-link-active-color:         $ht-main-colour;
 $navbar-default-link-active-bg:            $ht-dark-gray;
 $navbar-default-link-disabled-color:       #ccc;
 $navbar-default-link-disabled-bg:          transparent;
@@ -481,7 +481,7 @@ $pager-disabled-color:                 $pagination-disabled-color;
 $jumbotron-padding:              60px;
 $jumbotron-color:                white;
 $jumbotron-bg:                   $ht-dark-gray;
-$jumbotron-heading-color:        $ht-yellow;
+$jumbotron-heading-color:        $ht-main-colour;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5));
 
 
@@ -705,7 +705,7 @@ $panel-border-radius:         $border-radius-base;
 $panel-inner-border:          #ddd;
 $panel-footer-bg:             #f5f5f5;
 
-$panel-default-text:          $ht-yellow;
+$panel-default-text:          $ht-main-colour;
 $panel-default-border:        $ht-dark-gray;
 $panel-default-heading-bg:    $ht-dark-gray;
 

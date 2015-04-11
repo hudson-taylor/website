@@ -24,7 +24,7 @@
   url: /docs/schemas/
   subnav:
   - title: Overview
-    url: /docs/schemas/
+    url: /docs/schemas/overview/
   - title: Any
     url: /docs/schemas/any/
   - title: String
