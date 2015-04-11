@@ -1,0 +1,43 @@
+- title: Using HT
+  url: /docs/usage/
+  subnav:
+  - title: Overview
+    url: /docs/using-ht/
+  - title: Creating a Service
+    url: /docs/usage/service/
+  - title: Creating a Client
+    url: /docs/usage/client/
+  - title: Migrating from HT1.x
+    url: /docs/usage/migration/
+- title: Transports
+  url: /docs/transports/
+  subnav:
+  - title: TCP
+    url: /docs/transports/tcp/
+  - title: HTTP
+    url: /docs/transports/http/
+  - title: Local
+    url: /docs/transports/local/
+  - title: Make Your Own
+    url: /docs/transports/custom/
+- title: Schemas
+  url: /docs/schemas/
+  subnav:
+  - title: Overview
+    url: /docs/schemas/
+  - title: Any
+    url: /docs/schemas/any/
+  - title: String
+    url: /docs/schemas/string/
+  - title: Number
+    url: /docs/schemas/number/
+  - title: Boolean
+    url: /docs/schemas/boolean/
+  - title: Email
+    url: /docs/schemas/email/
+  - title: Object
+    url: /docs/schemas/object/
+  - title: Array
+    url: /docs/schemas/array/
+  - title: Make Your Own
+    url: /docs/schemas/custom/
