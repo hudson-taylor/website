@@ -35,3 +35,7 @@ Here is how to install HT on each platform we support.
 ```sh
 $ npm install hudson-taylor ht-schema --save
 ```
+
+## Quick Start
+
+TODO, copy from readme?
