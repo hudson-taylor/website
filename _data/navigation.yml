@@ -39,5 +39,7 @@
     url: /docs/schemas/object/
   - title: Array
     url: /docs/schemas/array/
+  - title: TypedArray
+    url: /docs/schemas/typedarray/
   - title: Make Your Own
     url: /docs/schemas/custom/
