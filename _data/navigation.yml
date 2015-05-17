@@ -1,13 +1,12 @@
-- title: Using HT
-  url: /docs/usage/
+- title: Overview
+  url: /docs/using-ht/
+- title: Docs
   subnav:
-  - title: Overview
-    url: /docs/using-ht/
-  - title: Creating a Service
+  - title: Service
     url: /docs/usage/service/
-  - title: Creating a Client
+  - title: Client
     url: /docs/usage/client/
-  - title: Migrating from HT1.x
+  - title: Migration from HT1.x
     url: /docs/usage/migration/
 - title: Transports
   url: /docs/transports/

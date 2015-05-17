@@ -23,8 +23,6 @@
                 {% endfor %}
               </ul>
             </li>
-          {% else if item.divider %}
-            <li><a><b>{{ item.title }}</b></a></li>
           {% else %}
             <li {% if page.url contains item.url %}class="active"{% endif %}>
               <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
