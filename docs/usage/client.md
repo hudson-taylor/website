@@ -127,3 +127,22 @@ chainedCall.end(function(err, response) {
     <i>Client.remote</i> has been deprecated in favour of <i>Client.call</i>
   </p>
 </blockquote>
+
+###Client.addSchema(service, method, schema)
+
+This allows you to add a schema that validates your data after it's returned.
+
+```js
+
+client.addSchema("service", "method", s.Object({
+  hello: s.String()
+}));
+
+client.call("service", "method", function(err, response) {
+
+  // you can be sure that 'response.hello' is a string
+  // if it's not - an err will be set to a validation error.
+
+});
+
+```
