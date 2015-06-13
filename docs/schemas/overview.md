@@ -9,11 +9,21 @@ permalink: /docs/schemas/overview/
 
 TODO
 
+<blockquote class="ht-callout ht-callout-warning">
+  <p>
+    <b>Warning:</b> as of <b>3.0.0</b> ht-schema will no longer automatically wrap child objects with <b>s.Object</b>
+  </p>
+</blockquote>
+
 ## Instance Methods
 
-### Schema.validate(data)
+### Schema.validate(data[, callback])
 
-Calling will try to validate *data*, and return the result.
+Calling will try to validate *data*.
+
+A callback is optional and should take the signature of `function(err, data)`.
+
+If no callback is passed, this method will return the validated data, or it will throw.
 
 ### Schema.clone([object|array,])
 
