@@ -40,5 +40,7 @@
     url: /docs/schemas/array/
   - title: TypedArray
     url: /docs/schemas/typedarray/
+  - title: Date
+    url: /docs/schemas/date/
   - title: Make Your Own
     url: /docs/schemas/custom/
