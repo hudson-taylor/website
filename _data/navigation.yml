@@ -44,3 +44,8 @@
     url: /docs/schemas/date/
   - title: Make Your Own
     url: /docs/schemas/custom/
+- title: Utilities
+  url: /docs/utils/
+  subnav:
+  - title: HT Decorators
+    url: /docs/utils/ht-decorators/
