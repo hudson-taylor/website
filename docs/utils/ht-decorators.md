@@ -15,15 +15,16 @@ permalink: /docs/utils/ht-decorators/
 
 The expose decorator takes a HT service, and then mounts the class method so it is callable.
 
-### @expose(service)
+### @expose(service[, schema])
 
 Where *service* is an instance of *ht.Service*
+Where *schema* is a ht compatible schema.
 
 ### Example
 
 ```js
 class methods {
-  @expose(service)
+  @expose(service, s.String());
   echo(data, callback) {
     return callback(null, data);
   }
