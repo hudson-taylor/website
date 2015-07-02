@@ -49,3 +49,5 @@
   subnav:
   - title: HT Decorators
     url: /docs/utils/ht-decorators/
+  - title: HT Express
+    url: /docs/utils/ht-express/
