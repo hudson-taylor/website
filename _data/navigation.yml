@@ -6,8 +6,6 @@
     url: /docs/usage/service/
   - title: Client
     url: /docs/usage/client/
-  - title: Migration from HT1.x
-    url: /docs/usage/migration/
 - title: Transports
   url: /docs/transports/
   subnav:
