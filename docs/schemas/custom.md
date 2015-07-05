@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Make your own custom validator
+title: Custom validator
 description: 
 permalink: /docs/schemas/custom/
 ---
