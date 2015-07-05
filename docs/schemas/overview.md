@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Using HT Schema
+title: HT Schema Overview
 description: 
 permalink: /docs/schemas/overview/
 ---
