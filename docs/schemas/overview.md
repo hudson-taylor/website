@@ -7,7 +7,13 @@ permalink: /docs/schemas/overview/
 
 # Schema
 
-TODO
+Hudson Taylor supports adding schemas to both incoming, and outgoing data. Doing this lets you have peace of mind about the data you're going to be processing, and also lets you automatically generate documentation for methods!
+
+<blockquote class="ht-callout ht-callout-info">
+  <p>
+    <b>Note:</b> you do not have to use <i>ht-schema</i> for schemas, you can use <a href="https://github.com/hudson-taylor/ht-joi">joi</a>, <a href="https://github.com/hudson-taylor/ht-tv4">JSON schema</a> or even write your own!
+  </p>
+</blockquote>
 
 <blockquote class="ht-callout ht-callout-warning">
   <p>
