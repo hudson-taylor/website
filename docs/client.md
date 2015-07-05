@@ -2,7 +2,7 @@
 layout: docs
 title: Creating a Client
 description: 
-permalink: /docs/usage/client/
+permalink: /docs/client/
 ---
 
 ## What is a Client?

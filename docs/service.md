@@ -2,7 +2,7 @@
 layout: docs
 title: Creating a Service
 description: 
-permalink: /docs/usage/service/
+permalink: /docs/service/
 ---
 
 ## What is a Service?

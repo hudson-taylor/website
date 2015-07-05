@@ -2,7 +2,7 @@
 layout: docs
 title: Using HT
 description: Basic overview of HT and its surrounding components.
-permalink: /docs/using-ht/
+permalink: /docs/overview/
 ---
 
 ## What is HT?

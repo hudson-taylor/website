@@ -1,11 +1,9 @@
 - title: Overview
-  url: /docs/using-ht/
-- title: Docs
-  subnav:
-  - title: Service
-    url: /docs/usage/service/
-  - title: Client
-    url: /docs/usage/client/
+  url: /docs/overview/
+- title: Service
+  url: /docs/service/
+- title: Client
+  url: /docs/client/
 - title: Transports
   url: /docs/transports/
   subnav:
