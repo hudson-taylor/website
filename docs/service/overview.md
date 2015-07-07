@@ -1,8 +1,8 @@
 ---
 layout: docs
-title: Creating a Service
+title: Overview
 description: 
-permalink: /docs/service/
+permalink: /docs/service/overview/
 ---
 
 ## What is a Service?

@@ -2,6 +2,11 @@
   url: /docs/overview/
 - title: Service
   url: /docs/service/
+  subnav:
+  - title: Overview
+    url: /docs/service/overview/
+  - title: API
+    url: /docs/service/api/
 - title: Client
   url: /docs/client/
 - title: Transports
