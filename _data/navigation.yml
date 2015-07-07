@@ -9,6 +9,11 @@
     url: /docs/service/api/
 - title: Client
   url: /docs/client/
+  subnav:
+  - title: Overview
+    url: /docs/client/overview/
+  - title: API
+    url: /docs/client/api/
 - title: Transports
   url: /docs/transports/
   subnav:

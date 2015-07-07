@@ -1,15 +1,11 @@
 ---
 layout: docs
-title: Creating a Client
+title: API
 description: 
-permalink: /docs/client/
+permalink: /docs/client/api/
 ---
 
-## What is a Client?
-
-TODO
-
-## Creating One
+## Instantiation
 
 ### new Client([services])
 
