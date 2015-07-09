@@ -9,7 +9,7 @@ permalink: /docs/client/api/
 
 ### new Client([services])
 
-Passing an optional object as an argument will mount those services on the client. You can also do this after the fact, see *Client.add*.
+Passing an optional object as an argument will mount those services on the client. You can also do this after the fact, see *Client#add*.
 
 #### Example
 
@@ -26,9 +26,9 @@ var client = new Client({
 
 ## Instance Methods
 
-### Client.add(name, transport)
+### Client#add(name, transport)
 
-*Client.add* is used to add another service to this client. It takes the name of the service, and an instance of a transport.
+*Client#add* is used to add another service to this client. It takes the name of the service, and an instance of a transport.
 
 #### Example
 
@@ -37,21 +37,21 @@ var transport = new ht.Transports.TCP({ host: "10.1.1.3", port: 1337 });
 client.add("otherService", transport);
 ```
 
-### Client.connect(callback)
+### Client#connect(callback)
 
-*Client.connect* initiates a connection to the remote service, if any of the transports you're using require it.
+*Client#connect* initiates a connection to the remote service, if any of the transports you're using require it.
 
 *callback* will be called when services are connected, with an optional error.
 
-### Client.disconnect(callback)
+### Client#disconnect(callback)
 
-*Client.disconnect* disconnects all transports.
+*Client#disconnect* disconnects all transports.
 
 *callback* will be called when services are disconnected, with an optional error.
 
-### Client.call(service, method[, data][, callback])
+### Client#call(service, method[, data][, callback])
 
-*Client.call* will call *method* on the remote service *service*, passing optional *data*, and then calling *callback* with an optional error, and the response from call.
+*Client#call* will call *method* on the remote service *service*, passing optional *data*, and then calling *callback* with an optional error, and the response from call.
 
 #### Example
 
@@ -62,9 +62,9 @@ client.call("users", "list", function(err, users) {
 });
 ```
 
-### Client.before(fn, options)
+### Client#before(fn, options)
 
-*Client.before* adds a function that will get executed **before** the data is sent to the remote service.
+*Client#before* adds a function that will get executed **before** the data is sent to the remote service.
 
 The optional options object can have the following properties.
 
@@ -73,9 +73,9 @@ The optional options object can have the following properties.
 | method  | string | "service1"      | Restrict this middleware to only the call for *service*. |
 | service | string | "reverseString" | Restrict this middleware to only the call for *method*.  |
 
-### Client.after(fn, options)
+### Client#after(fn, options)
 
-*Client.after* adds a function that will get executed **before** the data is returned to the client, but **after** the remote service has given a response.
+*Client#after* adds a function that will get executed **before** the data is returned to the client, but **after** the remote service has given a response.
 
 The optional options object can have the following properties.
 
@@ -84,9 +84,9 @@ The optional options object can have the following properties.
 | method  | string | "service2"      | Restrict this middleware to only the call for *service*. |
 | service | string | "reverseString" | Restrict this middleware to only the call for *method*.  |
 
-### Client.prepare(service, method, data)
+### Client#prepare(service, method, data)
 
-*Client.prepare* is similar to *Client.call*, but will return a function that you can call later, instead of immediately.
+*Client#prepare* is similar to *Client.call*, but will return a function that you can call later, instead of immediately.
 
 #### Example
 
@@ -99,11 +99,11 @@ findUsers(function(err, response) {
 });
 ```
 
-### Client.chain(service, method, data)
+### Client#chain(service, method, data)
 
 **TODO**: document this, explain how data is transfered to next call in chain, and how sequential calls work
 
-### Client.end(callback)
+### Client#end(callback)
 
 **see above**
 
@@ -111,20 +111,12 @@ findUsers(function(err, response) {
 
 ```js
 
-chainedCall.end(function(err, response) {
+chainedCall#end(function(err, response) {
   
 });
 ```
 
-###Client.remote(service, method, data, callback)
-
-<blockquote class="ht-callout ht-callout-warning">
-  <p>
-    <i>Client.remote</i> has been deprecated in favour of <i>Client.call</i>
-  </p>
-</blockquote>
-
-###Client.addSchema(service, method, schema)
+###Client#addSchema(service, method, schema)
 
 This allows you to add a schema that validates your data after it's returned.
 
