@@ -21,17 +21,57 @@ Hudson Taylor supports adding schemas to both incoming, and outgoing data. Doing
   </p>
 </blockquote>
 
+## Exported Methods
+
+### Schema.makeValidator(name, fn)
+
+See [Custom Validator](/docs/schemas/custom/) page for the documentation for *makeValidator*.
+
+### Schema.generate(json)
+
+This method will generate a schema from the result of *Schema#document()*.
+
 ## Instance Methods
 
-### Schema.validate(data[, callback])
+### Schema#validate(data[, key, callback])
 
-Calling will try to validate *data*.
+The validate method calls the internal validators and ensures the data you pass matches the schema.
+
+*key* should be passed if the schema is being validated as a child of aonther validator to ensure messages have the correct context.
 
 A callback is optional and should take the signature of `function(err, data)`.
 
 If no callback is passed, this method will return the validated data, or it will throw.
 
-### Schema.clone([object|array,])
+### Schema#document()
+
+Calling document will return a blob of JSON, this content will contain the necessary configuration for regenerating a schema with *#Schema.generate*. This allows you to store schemas as JSON, and even means you can remotely load them over the network.
+
+```js
+
+var schema = s.Object({
+  hello: s.String({ opt: true }).comment("this is the hello key")
+});
+
+console.log(schema.document());
+
+/*
+{ name: 'Object',
+  args: {},
+  children:
+   { hello:
+      { name: 'String',
+        args: { opt: true },
+        comment: 'this is the hello key' } } }
+*/
+
+```
+
+### Schema#comment(String|Function)
+
+Calling this function will add a message to the schema for use with *Schema#document()*.
+
+### Schema#clone([object|array,])
 
 Clone creates a copy of the schema.
 

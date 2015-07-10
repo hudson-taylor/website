@@ -1,13 +1,11 @@
 ---
 layout: docs
-title: Custom validator
+title: Custom Validator
 description: 
 permalink: /docs/schemas/custom/
 ---
 
-Creating a custom validator is very simple.
-
-# s.makeValidator(name, fn)
+# Schema.makeValidator(name, fn)
 
 Calling *s.makeValidator* will return an instance of a **Validator**.
 
