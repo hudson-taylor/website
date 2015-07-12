@@ -7,6 +7,10 @@ permalink: /docs/utils/ht-express/
 
 # HT Express
 
+<a href="https://npmjs.org/package/ht-express"><img src="https://img.shields.io/npm/v/ht-express.svg"></a>
+<a href="https://coveralls.io/r/hudson-taylor/ht-express"><img src="https://coveralls.io/repos/github/hudson-taylor/ht-express/badge.svg?branch=master"></a>
+<a href="https://npmjs.org/package/ht-express"><img src="https://img.shields.io/npm/dm/ht-express.svg"></a>
+
 Express middleware for routing requests to HT services. Using this allows you to serve a HTTP API using strictly defined and documentable methods.
 
 ## hte(client, service, method[, data]);
