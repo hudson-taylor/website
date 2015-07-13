@@ -16,6 +16,8 @@
     url: /docs/client/api/
   - title: Schemas
     url: /docs/client/schemas/
+  - title: Chaining
+    url: /docs/client/chaining/
 - title: Transports
   url: /docs/transports/
   subnav:
