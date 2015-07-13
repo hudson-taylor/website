@@ -9,7 +9,7 @@ permalink: /docs/client/chaining/
 
 HT allows you to *chain* service calls, essentially allowing you to directly pass the result of one function call to another one.
 
-To start a chaining call, just call *Client#chain()* as many times as you wish, passing in the relevant service/method/data you wish.
+To start a chaining call, just call *Client#chain()* as many times as you wish, passing in the relevant service/method/data.
 
 Once you have your 'chained' calls setup, execute them by calling *Client#end()*.
 
