@@ -20,21 +20,15 @@ All service APIs have a schema that both document expectations as well as valida
 
 ## Installation
 
-Here is how to install HT on each platform we support.
+```sh
+$ npm install hudson-taylor --save
+```
 
 <blockquote class="ht-callout ht-callout-info">
   <p>
     At the moment HT only has a Node.JS library, we're hoping to change that very soon!
   </p>
 </blockquote>
-
-### Node.js
-
-**Install**
-
-```sh
-$ npm install hudson-taylor ht-schema --save
-```
 
 ## Quick Start
 
