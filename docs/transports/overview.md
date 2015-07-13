@@ -23,6 +23,6 @@ There are 3 transports that come bundled with HT, these are
 
 ## Non-bundled
 
-| Name                                                      | Supported | Description                             |
-|-----------------------------------------------------------|-----------|-----------------------------------------|
-| [SQS](https://github.com/hudson-taylor/ht-sqs-transport)  | ✓         | Uses Amazons SQS service to communicate |
+| Name                                                      | Officially Supported | Description                             |
+|-----------------------------------------------------------|----------------------|-----------------------------------------|
+| [SQS](https://github.com/hudson-taylor/ht-sqs-transport)  | ✓                    | Uses Amazons SQS service to communicate |
