@@ -8,7 +8,6 @@ permalink: /docs/utils/ht-decorators/
 # HT Decorators
 
 <a href="https://npmjs.org/package/ht-decorators"><img src="https://img.shields.io/npm/v/ht-decorators.svg"></a>
-<a href="https://coveralls.io/r/hudson-taylor/ht-decorators"><img src="https://coveralls.io/repos/github/hudson-taylor/ht-decorators/badge.svg?branch=master"></a>
 <a href="https://npmjs.org/package/ht-decorators"><img src="https://img.shields.io/npm/dm/ht-decorators.svg"></a>
 
 ES7 Decorators that provide useful functionality for HT.
