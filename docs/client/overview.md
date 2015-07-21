@@ -13,12 +13,22 @@ a client from any code you wish to communicate to an ht service from, including 
 ## Creating one
 
 ```js
-var client = new Client();
-
-// or
-
-var transport = new ht.Transports.TCP({ port: 1337 });
 var client = new Client({
-  someService: transport
+  someService: new ht.Transports.TCP({ port: 1337 }),
+  anotherService: new ht.transports.TCP({ port : 1338 })
 });
+```
+
+## Invocation:
+
+```js
+client.connect(function(err) {
+  if(err) return console.error("There was an error connecting:", err);
+  client.call("someService", "example", {some : "data"}, function(err, response) {
+   console.log(err);      // -> undefined
+   console.log(response); // -> "test data"
+ });
+});
+
+
 ```
