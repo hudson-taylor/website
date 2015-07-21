@@ -6,8 +6,9 @@ permalink: /docs/client/overview/
 ---
 
 ## What is a Client?
-
-TODO
+ 
+The ht client is used to make calls against one or more ht services via their transport. You would use
+a client from any code you wish to communicate to an ht service from, including other services. 
 
 ## Creating one
 
