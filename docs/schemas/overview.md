@@ -7,6 +7,9 @@ permalink: /docs/schemas/overview/
 
 # Schema
 
+[![Build Status](https://travis-ci.org/hudson-taylor/ht-schema.svg?branch=master)](https://travis-ci.org/hudson-taylor/ht-schema)
+[![Coverage Status](https://img.shields.io/coveralls/hudson-taylor/ht-schema.svg)](https://coveralls.io/r/hudson-taylor/ht-schema)
+
 Hudson Taylor supports adding schemas to both incoming, and outgoing data. Doing this lets you have peace of mind about the data you're going to be processing, and also lets you automatically generate documentation for methods!
 
 <blockquote class="ht-callout ht-callout-info">
