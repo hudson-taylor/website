@@ -7,7 +7,9 @@ permalink: /docs/service/overview/
 
 ## What is a Service?
 
-TODO
+A Hudson Taylor service is a container for all of your callable methods. It is one side of the puzzle piece, the other being a *Client*.
+
+A single service can have many methods, and many transports - if you were to pass both a TCP and HTTP transport, you would be able to access it over both, depending on your situation (mobile vs. browser etc).
 
 ## Creating one
 
