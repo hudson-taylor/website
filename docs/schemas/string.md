@@ -48,7 +48,3 @@ Require the string to match any of the values in the array.
 ### sanitize: Boolean
 
 Escape data returned.
-
-### default: String
-
-Set to this value if the string is marked as optional and not provided.

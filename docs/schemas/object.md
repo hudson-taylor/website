@@ -35,3 +35,10 @@ Passing opt will make any data for this schema optional.
 ### strict: Boolean
 
 If false, keys not specified in *validators* will not cause checking to fail.
+
+
+## Common child options
+
+### default: <value based on type of child>
+
+All child validators of an object also support a default value.
