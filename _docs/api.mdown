@@ -1,0 +1,6 @@
+---
+title: "API Documentation"
+permalink: /docs/api/
+---
+
+Use the navigation menu on the left to browse the API documentation
