@@ -1,45 +1,141 @@
 ---
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
-excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-modified: 2016-04-13T15:54:02-04:00
 ---
 
-{% include base_path %}
+## Installation
 
-Minimal Mistakes has been developed to be 100% compatible with hosting a site on [GitHub Pages](https://pages.github.com/). To get up and running with a new GitHub repository quickly, follow these steps or jump ahead to the [full installation guide]({{ base_path }}/docs/installation/).
+```sh
+$ npm install hudson-taylor --save
+```
 
-## Fork the Theme
-
-Fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
-
-<figure>
-  <img src="{{ base_path }}/images/mm-theme-fork-repo.png" alt="fork Minimal Mistakes">
-</figure>
-
-**Note:** Your Jekyll site should be viewable immediately at <http://USERNAME.github.io>. If it's not, you can force a rebuild by **Customizing Your Site** (see below for more details).
-{: .notice--warning}
-
-If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
-
-<figure>
-  <img src="{{ base_path }}/images/mm-gh-pages.gif" alt="creating a new branch on GitHub">
-</figure>
-
-**ProTip:** Be sure to [delete](https://github.com/blog/1377-create-and-delete-branches) the `gh-pages` branch if you forked Minimal Mistakes. This branch contains the documentation and demo site for the theme and you probably don't want that showing up in your repo.
+At the moment HT only has a Node.JS library, we're hoping to change that very soon!
 {: .notice--info}
 
-## Customize Your Site
+## Let's go
 
-Open up `_config.yml` found in the root of the repo and edit anything under **Site Settings**. For a full explanation of every setting be sure to read the [**Configuration**]({{ base_path }}/docs/configuration/) section, but for now let's just change the site's title.
+To get started, there are 7 things you need to do:
 
-<figure>
-  <img src="{{ base_path }}/images/mm-github-edit-config.gif" alt="editing _config.yml file">
-  <figcaption>Edit text files without leaving GitHub.com</figcaption>
-</figure>
+1. Decide on a method of communication to use, HTTP, TCP or something else.
+2. Create a service
+3. Add methods to our service
+4. Start our service
+5. Create a client
+6. Connect our client
+7. Use our client!
 
-Committing a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with Jekyll. It should then be viewable a few seconds later at `https://USERNAME.github.io`.
+### Preamble
 
----
+Require things we need to...
 
-Congratulations! You've successfully forked the theme and are up an running with GitHub Pages. Now you're ready to add content and customize the site further.
+```js
+var ht = require('hudson-taylor')
+```
+
+### 1. Decide on a transport
+
+HT officially supports 3 different types of transports - `HTTP`, `TCP` and `Local` (to get more info go to their respective documentation pages)
+
+The `Local` transport comes bundled with the core HT library, but `HTTP` and `TCP` are shipped separately.
+{: .notice--info}
+
+#### Local
+
+```js
+var transport = new ht.Transports.Local()
+```
+
+#### HTTP
+
+```js
+var httpTransport = require('ht-http-transport')
+
+var transport = new httpTransport({
+  host: '127.0.0.1',
+  port: 8080
+})
+```
+
+#### TCP
+
+```js
+var tcpTransport = require('ht-tcp-transport')
+
+var transport = new tcpTransport({
+  host: '127.0.0.1',
+  port: 8080
+})
+```
+
+### 2. Create a service
+
+To create a service you need to give it a transport to use.
+
+```js
+var service = new ht.Service(transport)
+```
+
+### 3. Add a method
+
+Next, we need to add a method which can be called. To do this, we use the `.on` function on the service.
+
+```js
+// This function will just echo the data back to the client
+service.on('echo', function (data, callback) {
+  return callback(null, data)
+})
+```
+
+### 4. Start the service
+
+Lastly, if you chose the `HTTP` or `TCP` transport, we need to make the service start listening for connections..
+
+```js
+service.listen(function (err) {
+  if (err) {
+    console.error('There was an error listening:', err)
+  }
+})
+```
+
+### 5. Create a client
+
+Now that we have a service, we need a client to connect to it.
+
+You can add multiple services to a single client, just pass multiple object keys when initialising.
+
+You can also add services to a client at runtime by calling `Client#add`
+{: .notice--info}
+
+```js
+var client = new ht.Client({
+  // When using the client, or service above is now called 'test'
+  test: transport
+})
+```
+
+### 6. Connect the client
+
+If you use a transport that requires a permanent connection (like our `TCP` transport), then you need to call `.connect`.
+
+The `HTTP` transport does not require you to call `.connect`, even though you need to call `.listen` for a service. This is because it doesn't need to create a persistent connection, and just uses plain HTTP calls as a client.
+{: .notice--info}
+
+```js
+client.connect(function (err) {
+  if (err) {
+    console.error('There was an error connecting:', err)
+  }
+})
+```
+
+### 7. Use the client!
+
+Now all of our setup is done, we can call our echo method.
+
+```js
+client.call('test', 'echo', 'test data', function (err, response) {
+  console.log(err)      // -> undefined
+  console.log(response) // -> 'test data'
+})
+```

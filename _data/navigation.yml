@@ -1,92 +1,85 @@
-# example navigation
-foo:
-  - title: "Parent Link 1"
-    url: /parent-1-page-url/
-    children:
-      - title: "Child Link 1"
-        url: /child-1-page-url/
-      - title: "Child Link 2"
-        url: /child-2-page-url/
-
-  - title: "Parent Link 2"
-    url: /parent-2-page-url/
-    children:
-      - title: "Child Link 1"
-        url: /child-1-page-url/
-      - title: "Child Link 2"
-        url: /child-2-page-url/
-      - title: "Child Link 3"
-        url: /child-3-page-url/
-
 
 # main links links
 main:
-  - title: "Quick-Start Guide"
+  - title: What is it?
+    url: /docs/what/
+  - title: Quick-Start Guide
     url: /docs/quick-start-guide/
-
-  - title: "About"
-    url: /about/
-
-  - title: "Sample Posts"
-    url: /year-archive/
-
-  - title: "Sample Collections"
-    url: /collection-archive/
-
+  - title: API Documentation
+    url: /docs/api/
 
 # documentation links
 docs:
   - title: Getting Started
     children:
-      - title: "Quick-Start Guide"
+      - title: What is Hudson Taylor?
+        url: /docs/what/
+      - title: Quick-Start Guide
         url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
+      - title: API Documentation
+        url: /docs/api/
 
-  - title: Customization
+  - title: Service
     children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
+      - title: Overview
+        url: /docs/service/overview/
+      - title: API
+        url: /docs/service/api/
+      - title: Async / Await
+        url: /docs/service/asyncawait/
 
-  - title: Content
+  - title: Client
     children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
+      - title: Overview
+        url: /docs/client/overview/
+      - title: API
+        url: /docs/client/api/
+      - title: Chaining
+        url: /docs/client/chaining/
+      - title: Schemas
+        url: /docs/client/schemas/
+      - title: Async / Await
+        url: /docs/client/asyncawait/
 
-  - title: Extras
+  - title: Transports
     children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
+      - title: Overview
+        url: /docs/transports/overview/
+      - title: TCP
+        url: /docs/transports/tcp/
+      - title: HTTP
+        url: /docs/transports/http/
+      - title: Local
+        url: /docs/transports/local/
 
-  - title: Meta
+  - title: Utilities
     children:
-      - title: "History"
-        url: /docs/history/
-      - title: "Contributing"
-        url: /docs/contributing/
-      - title: "Old 2.2 Docs"
-        url: /docs/docs-2-2/
-      - title: "License"
-        url: /docs/license/
+      - title: HT Express
+        url: /docs/utils/ht-express/
+
+  - title: Schemas
+    children:
+      - title: "Overview"
+        url: /docs/schemas/overview/
+      - title: API
+        url: /docs/schemas/api/
+      - title: Validator - Any
+        url: /docs/schemas/any/
+      - title: Validator - Array
+        url: /docs/schemas/array/
+      - title: Validator - Boolean
+        url: /docs/schemas/boolean/
+      - title: Validator - Date
+        url: /docs/schemas/date/
+      - title: Validator - Email
+        url: /docs/schemas/email/
+      - title: Validator - Number
+        url: /docs/schemas/number/
+      - title: Validator - Object
+        url: /docs/schemas/object/
+      - title: Validator - String
+        url: /docs/schemas/string/
+      - title: Validator - TypedArray
+        url: /docs/schemas/typedarray/
+      - title: Writing a custom validator
+        url: /docs/schemas/custom/
