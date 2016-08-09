@@ -17,7 +17,7 @@ Where `service` is the name of the service you wish to call.
 
 Where `method` is the name of the method you wish to call.
 
-Where `data` is an *optional* array of keys that will be merged from the HTTP `request` object into the data passed to the call. **Defaults to:** `[ 'body' ]`
+Where `data` is an *optional* array of keys that will be merged from the HTTP `request` object into the data passed to the call. **Defaults to:** `[ 'body' ]`.  You can optionally provide an object, and its properties will be merged into the data.
 
 ### Validation errors
 
