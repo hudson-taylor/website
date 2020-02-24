@@ -25,6 +25,7 @@ npm install ht-http-transport --save
 | ssl     | Object     |          | { cert, key } | N/A       | Enable SSL                             |
 | agent   | http.Agent |          |               | N/A       | To manage connection persistence       |
 | timeout | number     |          | 1800          | N/A       | Timeout before the socket is connected |
+
 ## Example
 
 ```js
